@@ -14,7 +14,7 @@ int MusicPlayer() {
     while (1==1) {
         
         // First input, PLAY or EXIT
-        std::cout << "Input PLAY to play the song, input EXIT to exit program\n";
+        std::cout << "Input \"PLAY\" to play the song, input \"EXIT\" to exit program\n";
         std::string input1;
         getline(std::cin, input1);
         if (input1 == "EXIT") {
@@ -23,10 +23,12 @@ int MusicPlayer() {
         } else if(input1 == "PLAY" ) {
             std::cout << "Playing music\n";
             PlaySound(TEXT(".music/InconvenienceStoreTheme.wav"), NULL, SND_ASYNC | SND_LOOP);
+        } else {
+            std::cout << " Wrong input, did you input PLAY or play?\n";
         }
         
         // Second input, STOP or EXIT, dont input anything so the program keeps going
-        std::cout << "Input STOP to stop music, or EXIT to exit program\n";
+        std::cout << "Input \"STOP\" to stop music, or \"EXIT\" to exit program\n";
         std::string input2;
         getline(std::cin, input2);
         if (input2 == "STOP") {
@@ -35,6 +37,8 @@ int MusicPlayer() {
         } else if (input2 == "EXIT") {
             std::cout << "Exiting program...\n";
             return -1;
+        } else {
+            std::cout << " Wrong input, did you input PLAY or play?\n";
         }
     }
 }

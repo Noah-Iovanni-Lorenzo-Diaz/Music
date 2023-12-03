@@ -2,8 +2,7 @@
 Testing music playing in C++, works in any? windows device, prob will turn it into something bigger
 
 ## Helpful Tutorial:
-https://youtu.be/zOljIjBJvRI?si=5HRZfie-jNbrRgWC
+[__How to Stop and Play Music Using C++ (Simple) (PlaySound) by Max O'Didily__](https://youtu.be/zOljIjBJvRI?si=5HRZfie-jNbrRgWC)
 
 ## Program inspired by:
--- Theme of a store that only sells things you don't want (Inconvenience Store)
-https://youtu.be/mB6YotDQ_ow?si=VAmhwM6ha1-DwG2i
+[__Theme of a store that only sells things you don't want by AZALI__](https://youtu.be/mB6YotDQ_ow?si=VAmhwM6ha1-DwG2i)

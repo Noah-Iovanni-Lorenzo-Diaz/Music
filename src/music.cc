@@ -38,7 +38,7 @@ int MusicPlayer() {
             std::cout << "Exiting program...\n";
             return -1;
         } else {
-            std::cout << " Wrong input, did you input PLAY or play?\n";
+            std::cout << " Wrong input, did you input Stop or stop?\n";
         }
     }
 }

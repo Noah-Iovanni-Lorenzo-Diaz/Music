@@ -1,7 +1,7 @@
 # Music
 Testing music playing in C++, works in any? windows device, prob will turn it into something bigger <br>
 
-__**Things to implement:**__
+__Things to implement:__
 - A time bar
 - A GUI
 - More songs to choose

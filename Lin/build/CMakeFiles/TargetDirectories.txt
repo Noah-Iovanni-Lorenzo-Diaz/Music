@@ -1,0 +1,3 @@
+/home/noah/Documents/Music/Music/Lin/build/CMakeFiles/music.dir
+/home/noah/Documents/Music/Music/Lin/build/CMakeFiles/edit_cache.dir
+/home/noah/Documents/Music/Music/Lin/build/CMakeFiles/rebuild_cache.dir

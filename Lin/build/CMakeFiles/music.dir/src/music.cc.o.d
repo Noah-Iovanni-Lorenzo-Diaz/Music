@@ -290,4 +290,6 @@ CMakeFiles/music.dir/src/music.cc.o: \
  /usr/local/include/SDL2/SDL_render.h /usr/local/include/SDL2/SDL_shape.h \
  /usr/local/include/SDL2/SDL_system.h /usr/local/include/SDL2/SDL_timer.h \
  /usr/local/include/SDL2/SDL_version.h \
- /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h
+ /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h \
+ /home/noah/Documents/Music/Music/Lin/src/utils.cc \
+ /home/noah/Documents/Music/Music/Lin/src/menu.cc

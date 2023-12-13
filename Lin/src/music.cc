@@ -31,10 +31,11 @@ void manageAudio() {
     Uint32 audioBufferLength;
     
     if (SDL_LoadWAV("../.music/audio.wav", &want , &audioBuffer, &audioBufferLength) == nullptr) {
-        errorMessage("Couldn't load test.wav");
-        SDL_FreeWAV(audioBuffer);
-        SDL_Quit();
-        exit(EXIT_SUCCESS);
+        if (SDL_LoadWAV(".music/audio.wav", &want , &audioBuffer, &audioBufferLength) == nullptr) {
+            errorMessage("Couldn't load test.wav");
+            SDL_Quit();
+            exit(EXIT_SUCCESS);
+        }
     }
     
     //Create Audio Device

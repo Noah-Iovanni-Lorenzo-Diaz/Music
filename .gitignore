@@ -240,7 +240,9 @@ ClientBin/
 *.publishsettings
 orleans.codegen.cs
 .vscode/
-/build/
+Lin/build/*
+Lin/build/
+
 
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)

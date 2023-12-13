@@ -4,19 +4,6 @@
 #include "utils.cc"
 #include "menu.cc"
 
-// Global variable to track the position in the audio data
-Uint32 audioPosition = 0;
-
-// Audio callback function
-void audioCallback(void* userdata, Uint8* stream, int len) {
-    // Copy audio data from the buffer to the stream
-    SDL_memset(stream, 0, len);
-    if (audioPosition < len) {
-        SDL_memcpy(stream, reinterpret_cast<Uint8*>(userdata) + audioPosition, len - audioPosition);
-        audioPosition += len;
-    }
-}
-
 void manageAudio() {
     //Audio specifications
     SDL_AudioSpec want, have;
@@ -37,7 +24,7 @@ void manageAudio() {
             exit(EXIT_SUCCESS);
         }
     }
-    
+
     //Create Audio Device
     SDL_AudioDeviceID audioDevice = SDL_OpenAudioDevice(NULL, 0, &want, &have, 0);
     if (audioDevice == 0) {

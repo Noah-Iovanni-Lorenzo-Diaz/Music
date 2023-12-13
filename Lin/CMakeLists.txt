@@ -8,7 +8,7 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
 # Set the source files for your project
-set(SOURCE_FILES src/music.cc src/iooverload.h)
+set(SOURCE_FILES src/music.cc)
 
 # Create an executable
 add_executable(music ${SOURCE_FILES})

@@ -1,3 +1,11 @@
+/**
+ * @file utils.cc
+ * @author Noah Lorenzo Díaz
+ * @date 13-12-2023
+ * @brief Some error and memory handling
+ * 
+ */
+
 void errorMessage(const std::string& message) {
     std::cerr << message << ": " << SDL_GetError() << std::endl;
 }

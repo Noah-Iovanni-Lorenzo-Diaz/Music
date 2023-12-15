@@ -1,10 +1,26 @@
+/**
+ * @file music.cc
+ * @author Noah Lorenzo Díaz
+ * @date 13-12-2023
+ * @brief Program prototype to replicate a music player
+ * 
+ */
+
 #include <iostream>
 #include <SDL.h>
+
+void playAudio();
 
 #include "utils.cc"
 #include "menu.cc"
 
-void manageAudio() {
+/**
+ * @brief Plays the audio.
+ *
+ * Calls all the functions needed for the playing of songs
+ *
+ */
+void playAudio() {
     //Audio specifications
     SDL_AudioSpec want, have;
 
@@ -37,7 +53,7 @@ void manageAudio() {
 
     //Song loop
     while (true) {
-        callMenu(audioDevice, audioBuffer, menu);
+        callMenu(audioDevice, audioBuffer, audioBufferLength, menu);
     }
     cleanup(audioDevice, audioBuffer);
     SDL_Quit();
@@ -50,6 +66,6 @@ int main() {
     errorMessage("Couldn't initialize SDL");
     return -1;
     }
-    manageAudio();
+    playAudio();
     return 0;
 }

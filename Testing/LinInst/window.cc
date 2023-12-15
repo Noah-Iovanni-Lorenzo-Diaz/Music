@@ -28,7 +28,7 @@ SDL_Surface* gImage = NULL;
 
 SDL_Surface* gJPGSurface = NULL;
 
-void errorMessage(std::string_view error, int which) {
+void errorMessage(std::string_view error, bool which) {
     switch (which)
     {
     case 0:
@@ -38,7 +38,7 @@ void errorMessage(std::string_view error, int which) {
         std::cerr << error << " ERROR: " << IMG_GetError() << std::endl;
     
     default:
-        throw std::invalid_argument ("Invalid argument, only accepts a string and an int (0 or 1)");
+        throw std::invalid_argument ("Invalid argument, only accepts a string and a bool (0 or 1)");
         break;
     }
 }
